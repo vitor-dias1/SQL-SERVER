@@ -1,0 +1,4 @@
+select * from 'Table' where 'Column' 'Operation' 'value' and 'table name',D_E_L_E_T = ''
+/* exemplo */
+
+select * from SE1010 wherw E1_COD = '100000' and SE1010.D_E_L_E_T = ''
