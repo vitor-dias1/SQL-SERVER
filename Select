@@ -1,6 +1,44 @@
 -select simples
 
-select * from 'Table' where 'Column' 'Operation' 'value' and 'table name',D_E_L_E_T = ''
-/* exemplo */
+select * from 'Table' where 'Column' 'Operation' 'value' and 'table name'.D_E_L_E_T = ''
+- exemplo
 
-select * from SE1010 wherw E1_COD = '100000' and SE1010.D_E_L_E_T = ''
+select * from SE1010 where E1_COD = '100000' and SE1010.D_E_L_E_T = ''
+
+- Select com range
+
+select * from 'Table' where 'Column' in (
+'value',
+'value',
+'value')
+and 'table name'.D_E_L_E_T = ''
+
+- exemplo
+
+select * from SE1010 where E1_COD in 
+('100000',
+'100001',
+'100002')
+and SE1010.D_E_L_E_T = ''
+
+- select selecionando com colunas especificas
+
+select 'Column name', 'Column name' from 'Table' where 'Column' 'Operation' 'value' and 'table name'.D_E_L_E_T = ''
+
+- exemplo
+
+select E1_COD, E1_FILIAL from SE1010 where E1_COD = '100000' and SE1010.D_E_L_E_T = ''
+
+- select com interligações entre tabela
+
+select * from 'Table'
+inner join 'link table' on 'native table primary key' = 'link table foreign key' and 'link table name'.D_E_L_E_T = ''
+where 'Column' 'Operation' 'value' and 'native table name'.D_E_L_E_T = ''
+
+- exemplo
+
+select * from SE1010 
+inner join ZZ1010 on ZZ1_CODCLI = E1_COD and ZZ1010.D_E_L_E_T = ''
+where E1_COD = '100000' and SE1010.D_E_L_E_T = ''
+
+
