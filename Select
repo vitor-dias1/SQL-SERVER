@@ -1,3 +1,5 @@
+-select simples
+
 select * from 'Table' where 'Column' 'Operation' 'value' and 'table name',D_E_L_E_T = ''
 /* exemplo */
 
